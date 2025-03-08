@@ -317,7 +317,7 @@ export function initEmptyChatSession(): Session {
     const settings = store.get(atoms.settingsAtom)
     return {
         id: uuidv4(),
-        name: 'Untitled',
+        name: '新对话',
         type: 'chat',
         messages: [
             {

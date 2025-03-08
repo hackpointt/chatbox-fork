@@ -66,19 +66,19 @@ export default function Message(props: Props) {
     const tips: string[] = []
     if (props.sessionType === 'chat' || !props.sessionType) {
         if (showWordCount && !msg.generating) {
-            tips.push(`word count: ${msg.wordCount !== undefined ? msg.wordCount : countWord(msg.content)}`)
+            tips.push(`字数统计: ${msg.wordCount !== undefined ? msg.wordCount : countWord(msg.content)}`)
         }
         if (showTokenCount && !msg.generating) {
             if (msg.tokenCount === undefined) {
                 msg.tokenCount = estimateTokensFromMessages([msg])
             }
-            tips.push(`token count: ${msg.tokenCount}`)
+            tips.push(`token统计: ${msg.tokenCount}`)
         }
         if (showTokenUsed && msg.role === 'assistant' && !msg.generating) {
-            tips.push(`tokens used: ${msg.tokensUsed || 'unknown'}`)
+            tips.push(`tokens已用: ${msg.tokensUsed || 'unknown'}`)
         }
         if (showModelName && props.msg.role === 'assistant') {
-            tips.push(`model: ${props.msg.model || 'unknown'}`)
+            tips.push(`模型: ${props.msg.model || 'unknown'}`)
         }
     }
 

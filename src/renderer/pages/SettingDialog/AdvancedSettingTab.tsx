@@ -56,14 +56,6 @@ export default function AdvancedSettingTab(props: Props) {
                     <ExportAndImport onCancel={props.onCancel} />
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
-                <AccordionSummary aria-controls="panel1a-content">
-                    <Typography>{t('Error Reporting')}</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <AnalyticsSetting />
-                </AccordionDetails>
-            </Accordion>
         </Box>
     )
 }
