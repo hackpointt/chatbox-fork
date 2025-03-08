@@ -1,6 +1,6 @@
 {
-    "name": "xyz.chatboxapp.ce",
-    "productName": "xyz.chatboxapp.ce",
+    "name": "xyz.chatboxapp.com",
+    "productName": "xyz.chatboxapp.com",
     "version": "0.0.1",
     "license": "GPL-3.0 license",
     "description": "A desktop client for multiple cutting-edge AI models",
@@ -190,7 +190,7 @@
     },
     "build": {
         "productName": "DS本地聊天工具",
-        "appId": "xyz.chatboxapp.ce",
+        "appId": "xyz.chatboxapp.com",
         "asar": true,
         "asarUnpack": "**\\*.{node,dll}",
         "files": [
