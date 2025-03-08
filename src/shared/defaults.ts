@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 export function settings(): Settings {
     return {
-        aiProvider: ModelProvider.OpenAI,
+        aiProvider: ModelProvider.Ollama,
         openaiKey: '',
         apiHost: 'https://api.openai.com',
 
@@ -26,7 +26,7 @@ export function settings(): Settings {
         claudeModel: 'claude-3-5-sonnet-20241022',
 
         ollamaHost: 'http://127.0.0.1:11434',
-        ollamaModel: '',
+        ollamaModel: 'deepseek-r1:1.5b',
 
         lmStudioHost: 'http://127.0.0.1:1234',
         lmStudioModel: '',
@@ -65,9 +65,9 @@ export function newConfigs(): Config {
 }
 
 export function getDefaultPrompt() {
-    return 'You are a helpful assistant. You can help me by answering my questions. You can also ask me questions.'
+    return '我是DS小助手，可以帮您写作、写代码、翻译、提供建议等，您可以问我任何问题！'
 }
 
 export function sessions(): Session[] {
-    return [{ id: uuidv4(), name: 'Untitled', messages: [], type: 'chat' }]
+    return [{ id: uuidv4(), name: '新对话', messages: [{ id: uuidv4(), role: 'system', content: getDefaultPrompt() }], type: 'chat' }]
 }
