@@ -189,7 +189,7 @@
         ]
     },
     "build": {
-        "productName": "Chatbox CE",
+        "productName": "DS本地聊天工具",
         "appId": "xyz.chatboxapp.ce",
         "asar": true,
         "asarUnpack": "**\\*.{node,dll}",

@@ -3,7 +3,7 @@ import { Session } from '../../shared/types'
 export const defaultSessionsForEN: Session[] = [
     {
         id: 'justchat-b612-406a-985b-3ab4d2c482ff',
-        name: 'Just chat',
+        name: '新对话',
         type: 'chat',
         messages: [
             {
