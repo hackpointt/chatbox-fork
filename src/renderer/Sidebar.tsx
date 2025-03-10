@@ -27,6 +27,8 @@ import * as atoms from './stores/atoms'
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate'
 import { trackingEvent } from './packages/event'
 import LinkIcon from '@mui/icons-material/Link'
+import ContactSupportIcon from '@mui/icons-material/ContactSupport'
+import MenuBookIcon from '@mui/icons-material/MenuBook'
 import platform from './packages/platform'
 
 export const drawerWidth = 240
@@ -133,7 +135,7 @@ export default function Sidebar(props: Props) {
                         >
                             <ListItemIcon>
                                 <IconButton>
-                                    <LinkIcon fontSize="small" />
+                                    <ContactSupportIcon fontSize="small" />
                                 </IconButton>
                             </ListItemIcon>
                             <ListItemText>
@@ -149,7 +151,7 @@ export default function Sidebar(props: Props) {
                         >
                             <ListItemIcon>
                                 <IconButton>
-                                    <LinkIcon fontSize="small" />
+                                    <MenuBookIcon fontSize="small" />
                                 </IconButton>
                             </ListItemIcon>
                             <ListItemText>
